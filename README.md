@@ -16,9 +16,9 @@ A small end-to-end analysis of order fulfilment: generate data, clean it, query 
 
 ## Run it
 ```
-./run.sh
+sh run.sh
 ```
-This installs requirements, generates the data, runs the analysis and runs the tests (needs Python 3).
+This installs requirements, generates the data, runs the analysis and runs the tests (needs Python 3). Running it creates the `data/` and `output/` folders (CSV, SQLite database, `dashboard.png` and `summary.xlsx`). These generated files are not stored in the repository.
 
 ## Sample output (synthetic data)
 - 5,025 raw rows -> 5,000 unique orders: 4,791 closed (SLA analysis) and 209 open (backlog).
